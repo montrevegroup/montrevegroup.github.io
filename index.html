@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Official website and legal information for Montreve Group, a corporate organization in the Los Santos roleplay community.">
+  <title>Montreve Group | Official Website</title>
+  <style>
+    :root {
+      --navy: #08111f;
+      --panel: #101c2d;
+      --gold: #d4b57d;
+      --white: #f5f3ee;
+      --muted: #a8b2c2;
+      --line: rgba(212,181,125,.25);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(8,17,31,.96);
+    }
+    nav {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .monogram {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 23px;
+    }
+    .brand small {
+      display: block;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 23px; }
+    .navlinks a { color: var(--muted); font-size: 13px; }
+    .navlinks a:hover, footer a:hover { color: var(--gold); }
+    .hero {
+      padding: 110px 0 100px;
+      background:
+        radial-gradient(ellipse at 80% 30%, rgba(35,65,100,.35), transparent 55%);
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      color: var(--gold);
+      letter-spacing: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 800px;
+      margin: 20px 0;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+    }
+    h1 span { color: var(--gold); }
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 30px; }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .button.primary { background: var(--gold); color: var(--navy); }
+    section { padding: 75px 0; }
+    .section-title { font-size: 32px; margin: 8px 0 15px; }
+    .intro { max-width: 720px; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+    }
+    .card {
+      padding: 25px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+    .card .number { color: var(--gold); font-size: 12px; letter-spacing: 2px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 14px; }
+    .legal { background: #0b1626; border-top: 1px solid var(--line); }
+    .legal-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .legal-card p { margin: 3px 0; color: var(--muted); font-size: 13px; }
+    .legal-card a { color: var(--gold); font-size: 13px; white-space: nowrap; }
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    @media (max-width: 600px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 20px 0; }
+      .navlinks { gap: 14px; }
+      .hero { padding: 70px 0; }
+      .legal-card { align-items: flex-start; flex-direction: column; gap: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home">
+        <span class="monogram">M</span>
+        <span>MONTREVE GROUP<small>INTEGRITY · PROFESSIONALISM</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#divisions">DIVISIONS</a>
+        <a href="#legal">LEGAL</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">Official Corporate Website</div>
+        <h1>Built on Trust.<br><span>Driven by Integrity.</span></h1>
+        <p>
+          Montreve Group is a corporate organization within the Los Santos
+          roleplay community, bringing together professional services,
+          coordinated operations, and a commitment to responsible business.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#about">Discover Montreve</a>
+          <a class="button" href="#divisions">Explore Divisions</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title">A Unified Corporate Vision</h2>
+        <p class="intro">
+          Founded in 2020, Montreve Group began with a focused legal practice
+          and developed into a broader corporate organization. Our foundation
+          is professionalism, integrity, social responsibility, and access to
+          fair legal services within Los Santos.
+        </p>
+      </div>
+    </section>
+
+    <section id="divisions">
+      <div class="container">
+        <div class="eyebrow">Our Organization</div>
+        <h2 class="section-title">Corporate Divisions</h2>
+        <p class="intro">
+          Each division serves a distinct purpose while working toward the
+          shared standards and objectives of Montreve Group.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <div class="number">01 / LEGAL SERVICES</div>
+            <h3>Lawyer Division</h3>
+            <p>Legal representation, counsel, and professional legal services.</p>
+          </article>
+          <article class="card">
+            <div class="number">02 / PROTECTION</div>
+            <h3>Security Division</h3>
+            <p>Security coordination and protective services.</p>
+          </article>
+          <article class="card">
+            <div class="number">03 / MOBILITY</div>
+            <h3>Rental Service</h3>
+            <p>Vehicle rental services and customer assistance.</p>
+          </article>
+          <article class="card">
+            <div class="number">04 / PROPERTY</div>
+            <h3>Real Estate Division</h3>
+            <p>Residential property rentals and tenant services.</p>
+          </article>
+          <article class="card">
+            <div class="number">05 / COMMUNICATION</div>
+            <h3>Marketing Division</h3>
+            <p>Brand communication, promotion, and public engagement.</p>
+          </article>
+          <article class="card">
+            <div class="number">06 / DEVELOPMENT</div>
+            <h3>Construction Division</h3>
+            <p>Construction projects and infrastructure development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal" id="legal">
+      <div class="container">
+        <div class="eyebrow">Policies & Transparency</div>
+        <h2 class="section-title">Legal Information</h2>
+        <p class="intro">
+          Review the terms and privacy practices applicable to the Montreve
+          Group website and its associated Discord application.
+        </p>
+        <div class="legal-card">
+          <div>
+            <h3>Terms of Service</h3>
+            <p>Rules and conditions for using our services.</p>
+          </div>
+          <a href="terms.html">READ TERMS →</a>
+        </div>
+        <div class="legal-card">
+          <div>
+            <h3>Privacy Policy</h3>
+            <p>How information is handled and protected.</p>
+          </div>
+          <a href="privacy.html">READ PRIVACY POLICY →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Montreve Group. All rights reserved.</span>
+      <span>Los Santos Roleplay Community · Independent fictional organization</span>
+    </div>
+  </footer>
+</body>
+</html>
